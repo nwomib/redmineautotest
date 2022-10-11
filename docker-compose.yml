@@ -16,8 +16,8 @@ services:
     volumes:
       # Consider using separate volume containerstest!
       # instead of host directory mounts.
-      - /my/custom:/etc/mysql/conf.d
-      - /storage/mysql/datadir:/var/lib/mysql
+      - ./my/custom:/etc/mysql/conf.d
+      - ./storage/mysql/datadir:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: "<india>"
       MYSQL_DATABASE:      "redmine"
