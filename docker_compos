@@ -14,7 +14,7 @@ services:
     networks:
       - redmine-network
     volumes:
-      # Consider using separate volume containers
+      # Consider using separate volume containerstest!
       # instead of host directory mounts.
       - /my/custom:/etc/mysql/conf.d
       - /storage/mysql/datadir:/var/lib/mysql
