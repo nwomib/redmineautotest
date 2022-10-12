@@ -33,3 +33,6 @@ services:
       REDMINE_DB_PASSWORD:     "<india>"
       REDMINE_SECRET_KEY_BASE: "..."
     restart: always
+    command: cd plugins
+    command: bundle exec rake redmine:plugins:migrate
+    command: 
